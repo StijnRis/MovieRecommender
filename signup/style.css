@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: radial-gradient(orange, white);
+}
+
+.container {
+  text-align: center;
+}
+
+header {
+  background: none;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+.subtitle {
+  font-style: italic;
+  font-size: 0.8em;
+  color: #333;
+}
+
+.signup-box {
+  background: #ccc;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input,
+select {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #999;
+  border-radius: 5px;
+}
+
+.signup-btn {
+  background: blue;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-msg {
+  font-style: italic;
+  font-size: 0.8em;
+  color: blue;
+  margin-top: 10px;
+}

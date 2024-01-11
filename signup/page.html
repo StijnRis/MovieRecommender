@@ -1,11 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>Amazing Products</h1>
+        <p class="subtitle">You will be amazed</p>
+      </header>
+      <div class="signup-box">
+        <form>
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required />
+
+          <label for="gender">Gender</label>
+          <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+
+          <button type="submit" class="signup-btn">
+            <strong>Sign Up</strong>
+          </button>
+          <p class="login-msg">Or login</p>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
