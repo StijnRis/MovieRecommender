@@ -14,40 +14,53 @@
     </head>
 
     <body>
-        <div class="container">
-            <header>
-                <h1>Amazing Products</h1>
-                <p class="subtitle">You will be amazed</p>
-            </header>
-            <div class="signup-box">
-                <form>
-                    <label for="username">Username</label>
-                    <input type="text" id="username" name="username" required />
+        <nav>
+            <p>Amazing Products</p>
+            <a href="/search/page.html">Search</a>
+            <a href="/list_maker/page.html">List maker</a>
+            <a href="/signup/page.html">Sign up</a>
+        </nav>
+        <main>
+            <div class="container">
+                <header>
+                    <h1>Amazing Products</h1>
+                    <p class="subtitle">You will be amazed</p>
+                </header>
+                <div class="signup-box">
+                    <form>
+                        <label for="username">Username</label>
+                        <input
+                            type="text"
+                            id="username"
+                            name="username"
+                            required
+                        />
 
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required />
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required />
 
-                    <label for="password">Password</label>
-                    <input
-                        type="password"
-                        id="password"
-                        name="password"
-                        required
-                    />
+                        <label for="password">Password</label>
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            required
+                        />
 
-                    <label for="gender">Gender</label>
-                    <select id="gender" name="gender">
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                        <option value="other">Other</option>
-                    </select>
+                        <label for="gender">Gender</label>
+                        <select id="gender" name="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
 
-                    <button type="submit" class="signup-btn">
-                        <strong>Sign Up</strong>
-                    </button>
-                    <p class="login-msg">Or login</p>
-                </form>
+                        <button type="submit" class="signup-btn">
+                            <strong>Sign Up</strong>
+                        </button>
+                        <p class="login-msg">Or login</p>
+                    </form>
+                </div>
             </div>
-        </div>
+        </main>
     </body>
 </html>
