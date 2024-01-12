@@ -1,0 +1,12 @@
+:root {
+    --main-color: #ff9843;
+    --sub-main-color: #ffdd95;
+    --accent-color: #86a7fc;
+    --sub-accent-color: #3468c0;
+}
+
+html {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    background: radial-gradient(var(--main-color), white);
+}
