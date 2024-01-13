@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form Submission</title>
+    </head>
+    <body>
+        <form id="myForm" onsubmit="submitForm(event)">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <input type="submit" value="Submit" />
+        </form>
+
+        <script>
+            function submitForm(event) {
+                // Prevent the default form submission
+                event.preventDefault();
+
+                // Get the form element
+                var form = event.target;
+
+                // Create a FormData object to collect form data
+                var formData = new FormData(form);
+
+                // Convert FormData to a plain object
+                var formObject = {};
+                formData.forEach(function (value, key) {
+                    formObject[key] = value;
+                });
+
+                // Now you can use the formObject as a parameter or do something with it
+                console.log(formObject);
+
+                // For example, you can send the data to a server using AJAX
+                // You can replace this with your desired logic
+                // sendFormDataToServer(formObject);
+            }
+
+            // Example function to send form data to the server using AJAX
+            function sendFormDataToServer(formData) {
+                // Implement your AJAX logic here
+                // You can use libraries like Axios or the native XMLHttpRequest
+                // For simplicity, let's just log the data for demonstration purposes
+                console.log("Sending data to server:", formData);
+            }
+        </script>
+    </body>
+</html>
